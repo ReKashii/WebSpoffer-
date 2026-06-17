@@ -1,4 +1,4 @@
-# 🎭 WebSpoffer v2
+# WebSpoffer v2
 
 [![Firefox Add-on](https://img.shields.io/badge/Firefox-MV3-orange.svg?style=for-the-badge&logo=mozilla-firefox)](https://addons.mozilla.org/)
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg?style=for-the-badge)](LICENSE)
@@ -12,7 +12,7 @@ A diferencia de los bloqueadores tradicionales que desactivan APIs o inyectan va
 
 ---
 
-## 🌟 Filosofía: Spoofing Coherente
+##Spoofing Coherente
 
 Para evitar penalizaciones en el *Trust Score* y flags de "Lies" (mentiras) en los detectores, WebSpoffer garantiza consistencia lógica en tres dimensiones principales:
 
@@ -22,7 +22,7 @@ Para evitar penalizaciones en el *Trust Score* y flags de "Lies" (mentiras) en l
 
 ---
 
-## 📐 Arquitectura del Sistema
+## Arquitectura del Sistema
 
 El siguiente diagrama detalla cómo interactúan los componentes de WebSpoffer (Background Engine, Content Script, Main World Injector y Popup UI) para aislar y proteger tu huella digital de forma transparente y sin latencia:
 
@@ -67,7 +67,7 @@ graph TD
 
 ---
 
-## 🛠️ Pilares Tecnológicos & Evasión Avanzada
+## Pilares Tecnológicos & Evasión Avanzada
 
 ### 1. Motor de Identidad & PRNG Mulberry32 (background.js)
 El uso de `Math.random()` para generar ruido es autodestructivo. Detectores como CreepJS toman múltiples lecturas de Canvas o AudioContext en la misma página; si el valor muta en cada lectura, detectan *"Fingerprint tampering"*.
@@ -153,7 +153,7 @@ webSpoffer/
 
 ---
 
-## 🔍 Protocolo de Validación Técnica (Evasión Checklist)
+## Protocolo de Validación Técnica (Evasión Checklist)
 
 Sigue estos pasos detallados para validar la integridad del spoofing y confirmar la ausencia de fugas:
 
