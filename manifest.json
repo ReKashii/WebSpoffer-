@@ -1,0 +1,57 @@
+{
+  "manifest_version": 3,
+  "name": "WebSpoffer",
+  "version": "1.0.0",
+  "description": "Advanced deterministic fingerprint spoofing for Firefox. Coherent hardware identity randomization with anti-detection evasion.",
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "webspoffer@privacy.extension",
+      "strict_min_version": "109.0"
+    }
+  },
+
+  "permissions": [
+    "scripting",
+    "webRequest",
+    "webRequestBlocking",
+    "storage",
+    "activeTab",
+    "tabs",
+    "webNavigation"
+  ],
+
+  "host_permissions": [
+    "<all_urls>"
+  ],
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_start",
+      "all_frames": true
+    }
+  ],
+
+  "web_accessible_resources": [
+    {
+      "resources": ["injector.js"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "WebSpoffer — Fingerprint Control"
+  },
+
+  "icons": {
+    "48": "icons/icon-48.svg",
+    "96": "icons/icon-96.svg"
+  }
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebSpoffer — Fingerprint Control</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+
+  <!-- ============================================================ -->
+  <!-- Header: Marca + Versión                                      -->
+  <!-- ============================================================ -->
+  <header class="header">
+    <div class="header__brand">
+      <span class="header__icon">⚗️</span>
+      <span class="header__title">WebSpoffer</span>
+    </div>
+    <span class="header__version" id="version">v1.0.0</span>
+  </header>
+
+  <!-- ============================================================ -->
+  <!-- Status Bar: Indicador + Toggle                               -->
+  <!-- ============================================================ -->
+  <div class="status-bar">
+    <div class="status-indicator">
+      <div class="status-dot" id="statusDot"></div>
+      <span class="status-label" id="statusLabel">INACTIVO</span>
+    </div>
+    <label class="toggle" id="toggleSwitch">
+      <input type="checkbox" class="toggle__input" id="toggleInput">
+      <span class="toggle__slider"></span>
+    </label>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- RFP Warning Banner (Module 7)                                -->
+  <!-- ============================================================ -->
+  <div class="warning" id="rfpWarning">
+    <div class="warning__title">⚠️ Colisión Nativa Detectada</div>
+    <div class="warning__detail" id="rfpDetail">
+      privacy.resistFingerprinting está activo. Desactívalo en
+      about:config para evitar conflictos con WebSpoffer.
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- Loading State                                                -->
+  <!-- ============================================================ -->
+  <div class="loading" id="loadingState">
+    <div class="loading__spinner"></div>
+    Cargando perfil...
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- Telemetry Panel: Datos del perfil activo                     -->
+  <!-- ============================================================ -->
+  <div class="panel" id="telemetryPanel" style="display: none;">
+    <div class="panel__title">Identidad Activa</div>
+    <div class="telemetry">
+      <div class="telemetry__row">
+        <span class="telemetry__label">OS</span>
+        <span class="telemetry__value" id="dataOS">—</span>
+      </div>
+      <div class="telemetry__row">
+        <span class="telemetry__label">UA</span>
+        <span class="telemetry__value" id="dataUA">—</span>
+      </div>
+      <div class="telemetry__row">
+        <span class="telemetry__label">GPU</span>
+        <span class="telemetry__value" id="dataGPU">—</span>
+      </div>
+      <div class="telemetry__row">
+        <span class="telemetry__label">Vendor</span>
+        <span class="telemetry__value" id="dataVendor">—</span>
+      </div>
+      <div class="telemetry__row">
+        <span class="telemetry__label">Screen</span>
+        <span class="telemetry__value" id="dataScreen">—</span>
+      </div>
+      <div class="telemetry__row">
+        <span class="telemetry__label">Cores</span>
+        <span class="telemetry__value" id="dataCores">—</span>
+      </div>
+      <div class="telemetry__row">
+        <span class="telemetry__label">Lang</span>
+        <span class="telemetry__value" id="dataLang">—</span>
+      </div>
+      <div class="telemetry__row">
+        <span class="telemetry__label">TZ</span>
+        <span class="telemetry__value" id="dataTZ">—</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- Action Buttons                                               -->
+  <!-- ============================================================ -->
+  <div class="actions" id="actionsBar" style="display: none;">
+    <button class="btn btn--primary" id="btnRotate">
+      <span class="btn__icon">🔄</span>
+      Rotar Identidad
+    </button>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- Footer: Seed info                                            -->
+  <!-- ============================================================ -->
+  <footer class="footer" id="footerBar" style="display: none;">
+    <span class="footer__label">Session Seed</span>
+    <span class="footer__seed" id="dataSeed">0x00000000</span>
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+
+</html>

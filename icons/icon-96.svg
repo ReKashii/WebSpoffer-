@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" width="96" height="96">
+  <!-- Fondo circular -->
+  <circle cx="48" cy="48" r="46" fill="#e6d1d7"/>
+  
+  <!-- Sombra sutil del sombrero -->
+  <ellipse cx="49" cy="69" rx="33" ry="8.5" fill="#c4aeb5" opacity="0.5"/>
+  
+  <!-- Sombrero de mago - Cuerpo cónico -->
+  <path d="M48 8 L70 67 L26 67 Z" fill="#35b2b6"/>
+  
+  <!-- Degradado/brillo sutil en la cara izquierda -->
+  <path d="M48 8 L37 67 L26 67 Z" fill="#3fc4c8" opacity="0.35"/>
+  
+  <!-- Pliegues decorativos -->
+  <path d="M36 48 Q48 42 60 48" fill="none" stroke="#2a9598" stroke-width="1.2" opacity="0.6"/>
+  <path d="M39 55 Q48 52 57 55" fill="none" stroke="#2a9598" stroke-width="0.8" opacity="0.4"/>
+  
+  <!-- Estrellas estampadas en el sombrero -->
+  
+  <!-- Estrella grande (centro-arriba) -->
+  <polygon points="48,20 50.4,26 57,26 51.6,30 53.4,36 48,32.4 42.6,36 44.4,30 39,26 45.6,26" fill="#e2e868"/>
+  
+  <!-- Estrella mediana (izquierda) -->
+  <polygon points="37,38 38.5,42 42,42 39.2,44.4 40.2,48 37,45.6 33.8,48 34.8,44.4 32,42 35.5,42" fill="#e2e868"/>
+  
+  <!-- Estrella mediana (derecha) -->
+  <polygon points="57,42 58.5,46 62,46 59.2,48.4 60.2,52 57,49.6 53.8,52 54.8,48.4 52,46 55.5,46" fill="#e2e868"/>
+  
+  <!-- Estrella pequeña (centro-abajo) -->
+  <polygon points="48,52 49.2,55 52,55 49.8,57 50.4,60 48,58 45.6,60 46.2,57 44,55 46.8,55" fill="#e2e868"/>
+  
+  <!-- Estrella pequeña (izquierda-abajo) -->
+  <polygon points="33,52 33.8,54 36,54 34.2,55.4 34.8,57.4 33,56 31.2,57.4 31.8,55.4 30,54 32.2,54" fill="#e2e868" opacity="0.8"/>
+  
+  <!-- Estrella diminuta (arriba-derecha) -->
+  <polygon points="54,28 54.6,29.6 56.4,29.6 55,30.6 55.4,32.2 54,31.2 52.6,32.2 53,30.6 51.6,29.6 53.4,29.6" fill="#e2e868" opacity="0.7"/>
+  
+  <!-- Ala del sombrero -->
+  <ellipse cx="48" cy="67" rx="33" ry="8" fill="#35b2b6"/>
+  <ellipse cx="48" cy="67" rx="33" ry="8" fill="none" stroke="#2a9598" stroke-width="1.2"/>
+  
+  <!-- Brillo en el ala -->
+  <ellipse cx="38" cy="66" rx="12" ry="3" fill="#4dcacd" opacity="0.25"/>
+  
+  <!-- Cinta/banda del sombrero -->
+  <rect x="26" y="63" width="44" height="5" rx="2" fill="#2a9598"/>
+  <!-- Detalle de la cinta - hebilla/broche -->
+  <rect x="43" y="63.5" width="10" height="4" rx="1.5" fill="#e2e868" opacity="0.85"/>
+  <rect x="45.5" y="64.5" width="5" height="2" rx="1" fill="#2a9598"/>
+  
+  <!-- Brillo en la punta -->
+  <path d="M46 12 L48 8 L49.5 16" fill="#4dcacd" opacity="0.4"/>
+  
+  <!-- Estrella dorada en la punta del sombrero -->
+  <polygon points="48,5 49.8,10 55,10 50.8,13.5 52.4,18.5 48,15 43.6,18.5 45.2,13.5 41,10 46.2,10" fill="#e2e868"/>
+  <!-- Brillo de la estrella de la punta -->
+  <circle cx="48" cy="11" r="1.5" fill="#f5f0a0" opacity="0.6"/>
+  
+  <!-- Destellos mágicos alrededor del sombrero -->
+  <circle cx="18" cy="30" r="1.5" fill="#e2e868" opacity="0.6"/>
+  <circle cx="75" cy="25" r="1" fill="#e2e868" opacity="0.5"/>
+  <circle cx="78" cy="50" r="1.3" fill="#e2e868" opacity="0.4"/>
+  <circle cx="15" cy="55" r="1" fill="#e2e868" opacity="0.5"/>
+  <circle cx="72" cy="38" r="0.8" fill="#e2e868" opacity="0.3"/>
+</svg>
