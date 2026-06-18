@@ -12,7 +12,7 @@ A diferencia de los bloqueadores tradicionales que desactivan APIs o inyectan va
 
 ---
 
-##Spoofing Coherente
+## Spoofing Coherente
 
 Para evitar penalizaciones en el *Trust Score* y flags de "Lies" (mentiras) en los detectores, WebSpoffer garantiza consistencia lógica en tres dimensiones principales:
 
